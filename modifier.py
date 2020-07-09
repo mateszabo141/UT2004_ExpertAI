@@ -28,6 +28,14 @@ for row in content:
                         content[iterator] = content[iterator].replace(sub_word, '9.9')
     iterator += 1
 
+# printing to console
+for row in content:
+    if row != "":
+        words = row.split(",")
+        for word in words:
+            if general_pattern(word):
+                print(word)
+
 # writing to file
 with open("xplayersL1.upl", "w") as file:
     for row in content:

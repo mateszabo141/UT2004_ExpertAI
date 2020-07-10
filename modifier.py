@@ -33,12 +33,14 @@ def modify_file(filename):
             iterator += 1
 
         # printing to console
+        """
         for row in content:
             if row != "":
                 words = row.split(",")
                 for word in words:
                     if general_pattern(word):
                         print(word)
+        """
 
         # writing to file
         with open(filename, "w") as file:

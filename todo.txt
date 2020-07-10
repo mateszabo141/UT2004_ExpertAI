@@ -1,6 +1,9 @@
 + modify all 3 files
-- wait for user input
+- modify all attributes, even the ones with minus tag
+- wait for user input before exit
 + better feedback
+- feedback when done
+- delete testing code
 - write readme
 - clean up code
 - make exe

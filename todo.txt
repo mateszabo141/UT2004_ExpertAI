@@ -1,6 +1,6 @@
-- modify all 3 files
++ modify all 3 files
 - wait for user input
-- better feedback
++ better feedback
 - write readme
 - clean up code
 - make exe

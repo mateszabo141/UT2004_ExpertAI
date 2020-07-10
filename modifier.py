@@ -31,8 +31,6 @@ def modify_file(filename):
                             elif pattern_without_plus_sign(sub_word):
                                 content[iterator] = content[iterator].replace(sub_word, '9.9')
             iterator += 1
-        
-        print(content)
 
         # printing to console
         for row in content:
@@ -51,7 +49,9 @@ def modify_file(filename):
     except:
         return bool(False)
 
-xplayersL1 = modify_file("xplayersL1.upl")
-xplayersL2 = modify_file("xplayersL2.upl")
-xaplayersl3 = modify_file("xaplayersl3.upl")
-print(xplayersL1)
+if not modify_file("xplayersL1.upl"):
+    print("Failed to open xplayersL1.upl\nMake sure you execute the program in the \"Unreal Tournament 2004\System\" directory")
+if not modify_file("xplayersL2.upl"):
+    print("Failed to open xplayersL2.upl\nMake sure you execute the program in the \"Unreal Tournament 2004\System\" directory")
+if not modify_file("xaplayersl3.upl"):
+    print("Failed to open xaplayersl3.upl\nMake sure you execute the program in the \"Unreal Tournament 2004\System\" directory")

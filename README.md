@@ -1,17 +1,18 @@
 # UT2004_ExpertAI
 A little script that maxes out the difficulty settings for the AI in Unreal Tournament 2004.
 # Purpose
-The game's hardest difficulty (godlike) allows for additional modification in certain abilities of the bots. These modifying values are hardcoded into the game files and cannot be changed in the game. Some examples:
+The game's hardest difficulty (godlike) allows for additional modification of certain abilities of the bots. These modifying values are hardcoded into the game files and cannot be changed in the traditional way. Some examples:
 
 - Tactics=1.5
 - StrafingAbility=+1.5
 - Accuracy=0.5
 - Aggressiveness=+0.4
 
-If you're looking for challange, this program boosts all these values for all the bots to +9.9. (Extra fun with the instagib mode.)
+If you're looking for challange, this program boosts all these values for all the bots to +9.9 (extra fun with the instagib mode).
 
 # How to use
-
+At its current stage, the program only consists of a source code file and requires Python to run. You can download Python from their website: https://www.python.org/downloads/
+After you installed Python:
 - Copy modifier.py into the games System directory. For example: C:\Program Files\Unreal Tournament 2004\System
 - Double click on modifier.py
 - It's going to attempt to modify the files "xplayersL1.upl", "xplayersL2.upl", "xaplayersl3.upl". If all went well, you get a message in the console and you can close the program.

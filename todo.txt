@@ -1,8 +1,8 @@
 + modify all 3 files
 + modify all attributes, even the ones with minus tag
 + wait for user input before exit
-- better feedback
-- feedback when done
++ better feedback
++ feedback when done
 + delete testing code
 - write readme
 + clean up code

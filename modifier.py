@@ -37,16 +37,6 @@ def modify_file(filename):
                                 content[iterator] = content[iterator].replace(sub_word, '9.9')
             iterator += 1
 
-        # printing to console
-        """
-        for row in content:
-            if row != "":
-                words = row.split(",")
-                for word in words:
-                    if general_pattern(word):
-                        print(word)
-        """
-
         # writing to file
         with open(filename, "w") as file:
             for row in content:
@@ -56,11 +46,17 @@ def modify_file(filename):
     except:
         return bool(False)
 
-if not modify_file("xplayersL1.upl"):
+file1_success = modify_file("xplayersL1.upl")
+file2_success = modify_file("xplayersL2.upl")
+file3_success = modify_file("xaplayersl3.upl")
+
+if not file1_success:
     print("Failed to open xplayersL1.upl\nMake sure you execute the program in the \"Unreal Tournament 2004\System\" directory")
-if not modify_file("xplayersL2.upl"):
+elif not file2_success:
     print("Failed to open xplayersL2.upl\nMake sure you execute the program in the \"Unreal Tournament 2004\System\" directory")
-if not modify_file("xaplayersl3.upl"):
+elif not file3_success:
     print("Failed to open xaplayersl3.upl\nMake sure you execute the program in the \"Unreal Tournament 2004\System\" directory")
+else:
+    print("Succesfully modified all files")
 
 input("Press Enter to close the application")
